@@ -26,10 +26,12 @@ function generatePassword() {
   function getPasswordLength() {
     var pwdLength = window.prompt("How long would you like your password to be? Must be a number between 8 and 128.");
     if (pwdLength < 8 || pwdLength > 128 || isNaN(parseInt(pwdLength))) {
+      //if they give an invalid input, inform them and start oover
       window.alert("Invalid input. Please enter a number between 8 and 128.");
-      return getPasswordLength(); // Return the recursive call
+      return getPasswordLength();
     } else {
-      return parseInt(pwdLength); // Convert to number and return
+      //if they give a valid input, convert to number and return it
+      return parseInt(pwdLength); 
     }
   }
   
@@ -58,21 +60,24 @@ function generatePassword() {
       if (incNums) {
         pwdSelectionArray = pwdSelectionArray.concat(numbers);
       }
-    } else {
-      charSelection();
+    } 
+    //if they dont select any valid choices, they keep looping through until they do 
+    else {
+      return charSelection();
     }
     return pwdSelectionArray;
   }
   //set the function output from charSelection() equal to concatArray variable
   var concatArray = charSelection();
-  console.log(concatArray);
+  // console.log(concatArray);
 
   password = [];
   //random selection from the array
   for (i = chosenLength; i > 0; i--) {
     password.push(concatArray[Math.floor(Math.random() * concatArray.length)]);
   }
-  console.log(password);
+  stringPassword = password.join('');
+  window.alert(`Your new password is:\n${stringPassword}`);
 //end of generatePassword function
 } 
 
