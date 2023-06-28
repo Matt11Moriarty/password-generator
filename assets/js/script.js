@@ -44,7 +44,7 @@ function generatePassword() {
     var incLower = window.confirm('Include lower case letters?');
     var incSpec  = window.confirm('Include special characters?');
     var incNums  = window.confirm('Include numbers?');
-    //if they 
+    //if the user said yes to any option, we add concat the coices to the pwdSelectionArray
     if (incUpper || incLower || incSpec || incNums) {
       if (incUpper) {
         pwdSelectionArray = pwdSelectionArray.concat(upperCase);
@@ -63,9 +63,17 @@ function generatePassword() {
     }
     return pwdSelectionArray;
   }
-  
+  //set the function output from charSelection() equal to concatArray variable
   var concatArray = charSelection();
   console.log(concatArray);
+
+  password = [];
+  //random selection from the array
+  for (i = chosenLength; i > 0; i--) {
+    password.push(concatArray[Math.floor(Math.random() * concatArray.length)]);
+  }
+  console.log(password);
+//end of generatePassword function
 } 
 
 
