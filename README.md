@@ -10,3 +10,6 @@ Resources:
 
 - random gen resources
   - https://www.slingacademy.com/article/ways-to-generate-random-strings-in-javascript/
+  
+- prompt
+  - https://www.w3schools.com/jsref/met_win_prompt.asp
