@@ -76,8 +76,13 @@ function generatePassword() {
   for (i = chosenLength; i > 0; i--) {
     password.push(concatArray[Math.floor(Math.random() * concatArray.length)]);
   }
+  //turns the array into a string
   stringPassword = password.join('');
-  window.alert(`Your new password is:\n${stringPassword}`);
+  // window.alert(`Your new password is:\n${stringPassword}`);
+
+
+  var pwdSiteText = document.querySelector('.card-body')
+  pwdSiteText.children[0].setAttribute('placeholder', stringPassword)
 //end of generatePassword function
 } 
 
