@@ -1,6 +1,11 @@
 # password-generator
 
 Resources:
+- starter code
+  - https://github.com/coding-boot-camp/friendly-parakeet
+
+- special chars 
+  - https://owasp.org/www-community/password-special-characters
 
 - shuffle an array 
   - https://stackoverflow.com/questions/5915096/get-a-random-item-from-a-javascript-array
