@@ -25,15 +25,14 @@ function generatePassword() {
   //gets user input for the desired length of the password. Only takes numbers between a range
   function getPasswordLength() {
     var pwdLength = window.prompt("How long would you like your password to be? Must be a number between 8 and 128.");
-    if (pwdLength < 8 || pwdLength > 128 || isNaN(pwdLength)) {
-      window.alert("Can't you read?");
-        getPasswordLength();
-
+    if (pwdLength < 8 || pwdLength > 128 || isNaN(parseInt(pwdLength))) {
+      window.alert("Invalid input. Please enter a number between 8 and 128.");
+      return getPasswordLength(); // Return the recursive call
     } else {
-      return parseInt(pwdLength);
+      return parseInt(pwdLength); // Convert to number and return
     }
   }
-  //store the value of getPasswordLength()
+  
   var chosenLength = getPasswordLength();
   console.log(chosenLength);
 

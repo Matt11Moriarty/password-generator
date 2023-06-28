@@ -16,3 +16,4 @@ Resources:
 
 - convert a string into a number 
   - https://www.freecodecamp.org/news/how-to-convert-a-string-to-a-number-in-javascript/
+  - https://iaforek.medium.com/difference-between-number-and-parseint-in-javascript-77f3ae9b735b
