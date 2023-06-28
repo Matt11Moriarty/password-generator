@@ -13,3 +13,6 @@ Resources:
   
 - prompt
   - https://www.w3schools.com/jsref/met_win_prompt.asp
+
+- convert a string into a number 
+  - https://www.freecodecamp.org/news/how-to-convert-a-string-to-a-number-in-javascript/

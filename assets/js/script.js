@@ -36,9 +36,40 @@ function generatePassword() {
   //store the value of getPasswordLength()
   var chosenLength = getPasswordLength();
   console.log(chosenLength);
- 
-}
+
+  //what character types will be included
+  function charSelection () {
+    var pwdSelectionArray = [];
+    //get the users inputs
+    var incUpper = window.confirm('Include upper case letters?');
+    var incLower = window.confirm('Include lower case letters?');
+    var incSpec  = window.confirm('Include special characters?');
+    var incNums  = window.confirm('Include numbers?');
+    //if they 
+    if (incUpper || incLower || incSpec || incNums) {
+      if (incUpper) {
+        pwdSelectionArray = pwdSelectionArray.concat(upperCase);
+      }
+      if (incLower) {
+        pwdSelectionArray = pwdSelectionArray.concat(lowerCase);
+      }
+      if (incSpec) {
+        pwdSelectionArray = pwdSelectionArray.concat(specialChars);
+      } 
+      if (incNums) {
+        pwdSelectionArray = pwdSelectionArray.concat(numbers);
+      }
+    } else {
+      charSelection();
+    }
+    return pwdSelectionArray;
+  }
+  
+  var concatArray = charSelection();
+  console.log(concatArray);
+} 
 
 
 generatePassword();
+
 
