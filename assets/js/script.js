@@ -82,7 +82,11 @@ function generatePassword() {
   var pwdSiteText = document.querySelector('.card-body')
   pwdSiteText.children[0].setAttribute('placeholder', stringPassword)
   
-  window.alert(stringPassword);
+  //displays an alert with the pw so that you can copy it from there
+  setTimeout(function() {
+    window.alert(stringPassword);
+  }, 1000);
+  
 
 //end of generatePassword function
 } 
