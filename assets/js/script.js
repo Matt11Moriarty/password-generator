@@ -1,20 +1,21 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+//   passwordText.value = password;
 
-}
+// }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", generatePassword);
 
 
-
+//this function runs when the button is clicked
 function generatePassword() {
   //arrays
   var lowerCase    = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -24,10 +25,10 @@ function generatePassword() {
 
   //gets user input for the desired length of the password. Only takes numbers between a range
   function getPasswordLength() {
-    var pwdLength = window.prompt("How long would you like your password to be? Must be a number between 8 and 128.");
+    var pwdLength = window.prompt("How long would you like your password to be? Must be a number between 8 and 128.", "enter length here");
     if (pwdLength < 8 || pwdLength > 128 || isNaN(parseInt(pwdLength))) {
       //if they give an invalid input, inform them and start oover
-      window.alert("Invalid input. Please enter a number between 8 and 128.");
+      window.alert("Can't you read?");
       return getPasswordLength();
     } else {
       //if they give a valid input, convert to number and return it
@@ -69,7 +70,6 @@ function generatePassword() {
   }
   //set the function output from charSelection() equal to concatArray variable
   var concatArray = charSelection();
-  // console.log(concatArray);
 
   password = [];
   //random selection from the array
@@ -78,7 +78,6 @@ function generatePassword() {
   }
   //turns the array into a string
   stringPassword = password.join('');
-  // window.alert(`Your new password is:\n${stringPassword}`);
 
 
   var pwdSiteText = document.querySelector('.card-body')
@@ -87,6 +86,6 @@ function generatePassword() {
 } 
 
 
-generatePassword();
+// generatePassword();
 
 
