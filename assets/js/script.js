@@ -82,13 +82,8 @@ function generatePassword() {
   var pwdSiteText = document.querySelector('.card-body')
   pwdSiteText.children[0].setAttribute('placeholder', stringPassword)
   
-  //copies the password to clipboard
-  const copyToClipboard = (str) => {
-    if (navigator && navigator.clipboard && navigator.clipboard.writeText)
-      return navigator.clipboard.writeText(str);
-    return Promise.reject('The Clipboard API is not available.');
-  };
-  copyToClipboard(stringPassword);
+  window.alert(stringPassword);
+
 //end of generatePassword function
 } 
 
