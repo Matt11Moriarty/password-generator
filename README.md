@@ -26,8 +26,9 @@ The code required me to become comfortable with functions, conditional statement
 
 N/A
 
-
 ## Usage
+
+Site URL: https://matt11moriarty.github.io/password-generator/
 
 - Click the "Generate Password" 
 - Input the desired length (within the parameters)
