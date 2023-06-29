@@ -37,7 +37,6 @@ function generatePassword() {
   }
   
   var chosenLength = getPasswordLength();
-  console.log(chosenLength);
 
   //what character types will be included
   function charSelection () {
@@ -84,15 +83,12 @@ function generatePassword() {
   pwdSiteText.children[0].setAttribute('placeholder', stringPassword)
   
   //copies the password to clipboard
-  const copyContent = async () => {
-    try {
-      await navigator.clipboard.writeText(pwdSiteText);
-      console.log('Content copied to clipboard');
-    } catch (err) {
-      console.error('Failed to copy: ', err);
-    }
-  }
-  copyContent();
+  const copyToClipboard = (str) => {
+    if (navigator && navigator.clipboard && navigator.clipboard.writeText)
+      return navigator.clipboard.writeText(str);
+    return Promise.reject('The Clipboard API is not available.');
+  };
+  copyToClipboard(stringPassword);
 //end of generatePassword function
 } 
 
