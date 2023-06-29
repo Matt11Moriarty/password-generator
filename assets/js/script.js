@@ -70,7 +70,6 @@ function generatePassword() {
   }
   //set the function output from charSelection() equal to concatArray variable
   var concatArray = charSelection();
-  // console.log(concatArray);
 
   password = [];
   //random selection from the array
@@ -79,7 +78,6 @@ function generatePassword() {
   }
   //turns the array into a string
   stringPassword = password.join('');
-  // window.alert(`Your new password is:\n${stringPassword}`);
 
 
   var pwdSiteText = document.querySelector('.card-body')

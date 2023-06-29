@@ -1,4 +1,41 @@
-# password-generator
+# Password Generator
+
+## Description
+
+This password generator allows for any user to create a randomized, strong password with the desired parameters included.
+
+I created this password generator so that I can create secure credentials and protect myself from any bad-actors who might try to access my data.
+Along the way, I learned how to create an interactive application with a real world use!
+The code required me to become comfortable with functions, conditional statements, and logical operators. As well as implementing user alerts and inputs from the browser.
+
+## Table of Contents (Optional)
+
+- [Password Generator](#password-generator)
+  - [Description](#description)
+  - [Table of Contents (Optional)](#table-of-contents-optional)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  - [Badges](#badges)
+  - [Features](#features)
+  - [How to Contribute](#how-to-contribute)
+  - [Tests](#tests)
+
+## Installation
+
+N/A
+
+
+## Usage
+
+- Click the "Generate Password" 
+- Input the desired length (within the parameters)
+- Choose one or more character sets to include
+
+![alt text](./assets/images/Screenshot%202023-06-29%20at%2011.31.11%20AM.png)
+
+## Credits
 
 Resources:
 - starter code
@@ -22,3 +59,28 @@ Resources:
 - convert a string into a number 
   - https://www.freecodecamp.org/news/how-to-convert-a-string-to-a-number-in-javascript/
   - https://iaforek.medium.com/difference-between-number-and-parseint-in-javascript-77f3ae9b735b
+
+## License
+
+N/A
+
+---
+
+## Badges
+
+N/A
+
+## Features
+
+- Click the button to generate a password
+  - Follow the prompts as directed
+
+Feel free to run it several times if you don't like the first one!
+
+## How to Contribute
+
+N/A
+
+## Tests
+
+N/A
