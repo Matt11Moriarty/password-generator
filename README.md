@@ -33,6 +33,8 @@ Site URL: https://matt11moriarty.github.io/password-generator/
 - Click the "Generate Password" 
 - Input the desired length (within the parameters)
 - Choose one or more character sets to include
+- Copy password from the alert when it pops up 
+  - It will appear after 1 second
 
 ![alt text](./assets/images/Screenshot%202023-06-29%20at%2011.31.11%20AM.png)
 
@@ -60,6 +62,9 @@ Resources:
 - convert a string into a number 
   - https://www.freecodecamp.org/news/how-to-convert-a-string-to-a-number-in-javascript/
   - https://iaforek.medium.com/difference-between-number-and-parseint-in-javascript-77f3ae9b735b
+
+- adding a delay
+  - https://stackoverflow.com/questions/17883692/how-to-set-time-delay-in-javascript
 
 ## License
 
