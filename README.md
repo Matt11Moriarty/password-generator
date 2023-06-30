@@ -33,8 +33,7 @@ Site URL: https://matt11moriarty.github.io/password-generator/
 - Click the "Generate Password" 
 - Input the desired length (within the parameters)
 - Choose one or more character sets to include
-- Copy password from the alert when it pops up 
-  - It will appear after 1 second
+- Highlight and copy the password from the text box
 
 ![alt text](./assets/images/Screenshot%202023-06-29%20at%2011.31.11%20AM.png)
 
@@ -80,6 +79,7 @@ N/A
 
 - Click the button to generate a password
   - Follow the prompts as directed
+- Copy your new password out of the text box!
 
 Feel free to run it several times if you don't like the first one!
 
