@@ -1,18 +1,17 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-
 // Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
 
-//   passwordText.value = password;
+  passwordText.value = password;
 
-// }
+}
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", generatePassword);
+generateBtn.addEventListener("click", writePassword);
 
 
 //this function runs when the button is clicked
@@ -77,21 +76,11 @@ function generatePassword() {
   }
   //turns the array into a string
   stringPassword = password.join('');
-
-
-  var pwdSiteText = document.querySelector('.card-body')
-  pwdSiteText.children[0].setAttribute('placeholder', stringPassword)
-  
-  //displays an alert with the pw so that you can copy it from there
-  setTimeout(function() {
-    window.alert(stringPassword);
-  }, 1000);
-  
-
-//end of generatePassword function
+  //returns the finalized Password
+  return stringPassword;
 } 
 
 
-// generatePassword();
+
 
 
